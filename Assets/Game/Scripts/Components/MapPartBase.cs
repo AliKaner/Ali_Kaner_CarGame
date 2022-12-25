@@ -1,6 +1,3 @@
-using Newtonsoft.Json.Bson;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Game.MapStystem.Base
@@ -12,7 +9,7 @@ namespace Game.MapStystem.Base
 
         public virtual void Intialize()
         {
-            isActive = true;    
+            isActive = true;
         }
 
         public void Activate()
@@ -32,7 +29,8 @@ namespace Game.MapStystem.Base
 
     public enum MapPartType
     {
-        Opstcle,
+        Entrance,
         Wall,
+        Target,
     }
 }

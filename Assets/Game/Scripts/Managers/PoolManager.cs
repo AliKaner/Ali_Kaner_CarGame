@@ -1,13 +1,12 @@
 using Game.Managers;
 using Game.MapStystem.Base;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace Game.LevelSystem
+namespace Game.LevelSystem.Pool
 {
-    public class PoolManager : MonoBehaviour
+public class PoolManager : MonoBehaviour
     {
         private List<MapPartBase> _mapPartBases;
 
@@ -39,7 +38,6 @@ namespace Game.LevelSystem
             {
                 platform.Deactivate();
             }
-
         }
     }
 }

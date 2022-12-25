@@ -1,8 +1,7 @@
+using Game.Car.Base;
 using Game.Managers;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.EditorTools;
 using UnityEngine;
+using Game.LevelSystem.Pool;
 
 namespace Game.LevelSystem
 {
@@ -28,7 +27,6 @@ namespace Game.LevelSystem
                 var platform = _poolManager.GetAvailablePart(mapPartData.mapPartType);
                 platform.transform.position = mapPartData.Position;
             }
-
 
             _car.transform.position = _carStartPosition;
         }

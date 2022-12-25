@@ -1,18 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
+using Game.Car.Base;
 using UnityEngine;
+using Game.ControlSystem.Controllers;
 
+namespace Game.LevelSystem.Level
+
+{
 public class LevelManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public CarBase playersCar;
+
+    private int roundCount = 0;
+    private CarBase[] cars;
+
+    public void ResetLevel()
     {
-        
+        roundCount = 0;
+        playersCar = cars[roundCount];
     }
 
-    // Update is called once per frame
-    void Update()
+    public void NextRound()
     {
-        
+        if (roundCount == 7)
+        {
+            ResetLevel();
+        }
+
+        roundCount++;
+        playersCar = cars[roundCount];
     }
+
+    public void StartRound()
+    {
+        for (int i = 0; i < roundCount - 1; i++)
+        {
+            cars[i].PlayRecord();
+        }
+        playersCar.gameObject.AddComponent<CarController>();
+    }
+}
 }

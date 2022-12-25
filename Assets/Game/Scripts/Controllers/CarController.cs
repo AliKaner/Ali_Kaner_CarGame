@@ -1,24 +1,27 @@
 using UnityEngine;
 
-public class CarController : MonoBehaviour
+namespace Game.ControlSystem.Controllers
 {
-    public Transform playersCar;
-
-    [SerializeField]
-    private float speed;
-
-    private void Awake()
+    public class CarController : MonoBehaviour
     {
-        DontDestroyOnLoad(this.gameObject);
-    }
+        public Transform playersCar;
 
-    public void TurnLeft()
-    {
-        playersCar.Rotate(0, -speed, 0);
-    }
+        [SerializeField]
+        private float speed;
 
-    public void RightLeft()
-    {
-        playersCar.Rotate(0, -speed, 0);
+        private void Awake()
+        {
+            DontDestroyOnLoad(this.gameObject);
+        }
+
+        public void TurnLeft()
+        {
+            playersCar.Rotate(0, -speed, 0);
+        }
+
+        public void RightLeft()
+        {
+            playersCar.Rotate(0, -speed, 0);
+        }
     }
 }
