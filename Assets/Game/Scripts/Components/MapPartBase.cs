@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Game.MapStystem.Base
+namespace Game.MapSystem.Base
 {
     public abstract class MapPartBase : MonoBehaviour
     {
@@ -29,8 +29,8 @@ namespace Game.MapStystem.Base
 
     public enum MapPartType
     {
-        Entrance,
-        Wall,
-        Target,
+        ENTRANCE,
+        WALL,
+        TARGET
     }
 }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Game.Managers
+namespace Game.Managers.Effect
 {
     public class EffectManager:MonoBehaviour
     {

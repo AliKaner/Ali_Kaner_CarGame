@@ -12,6 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4370f32bd5a5764fbeb655895d77ce2, type: 3}
   m_Name: Level1
   m_EditorClassIdentifier: 
-  MapPartDatas: []
-  Entrances: []
-  Targets: []
+  MapPartDatas:
+  - Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    mapPartType: 0
+  - Position: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+    Scale: {x: 0, y: 0, z: 0}
+    mapPartType: 0

@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 using Game.LevelSystem.Level;
-using Game.Managers;
+using Game.Managers.Effect;
 
 namespace Game.Car.Base
 {
@@ -49,7 +49,7 @@ namespace Game.Car.Base
             {
                 case "Wall":
                 case "Car":
-                    StartCoroutine(effectManager.Shake(1f,1f));
+                    effectManager.Shake(1f,1f);
                     levelManager.ResetLevel();
                     break;
 

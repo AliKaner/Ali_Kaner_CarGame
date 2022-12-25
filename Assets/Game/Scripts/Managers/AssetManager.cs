@@ -1,6 +1,6 @@
 using Assets.Game.Scripts.Utils;
 using Game.LevelSystem;
-using Game.MapStystem.Base;
+using Game.MapSystem.Base;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;

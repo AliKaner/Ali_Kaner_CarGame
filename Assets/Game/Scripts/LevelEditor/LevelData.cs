@@ -1,4 +1,4 @@
-using Game.MapStystem.Base;
+using Game.MapSystem.Base;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
