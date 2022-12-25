@@ -1,8 +1,8 @@
+using Game.LevelSystem.Level;
+using Game.Managers.Effect;
 using System;
 using System.Collections.Generic;
 using UnityEngine;
-using Game.LevelSystem.Level;
-using Game.Managers.Effect;
 
 namespace Game.Car.Base
 {
@@ -12,6 +12,7 @@ namespace Game.Car.Base
 
         [SerializeField]
         private float speed;
+
         private List<Transform> recordedPath = new List<Transform>();
         private int currentTransformIndex = 0;
         private LevelManager levelManager;
@@ -49,7 +50,7 @@ namespace Game.Car.Base
             {
                 case "Wall":
                 case "Car":
-                    effectManager.Shake(1f,1f);
+                    effectManager.Shake(1f, 1f);
                     levelManager.ResetLevel();
                     break;
 

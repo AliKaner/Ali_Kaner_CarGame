@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Game.Managers.Effect
 {
-    public class EffectManager:MonoBehaviour
+    public class EffectManager : MonoBehaviour
     {
         private Transform cam;
 
