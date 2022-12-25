@@ -1,5 +1,4 @@
-﻿
-using Game.MapSystem.Base;
+﻿using Game.MapSystem.Base;
 
 namespace Game.MapSystem.Components
 {
@@ -8,6 +7,6 @@ namespace Game.MapSystem.Components
         public override MapPartType mapPartType => MapPartType.ENTRANCE;
 
         internal override void Initialize()
-        {}
+        { }
     }
 }

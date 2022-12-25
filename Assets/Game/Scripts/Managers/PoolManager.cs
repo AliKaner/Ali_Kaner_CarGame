@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Game.LevelSystem.Pool
 {
-public class PoolManager : MonoBehaviour
+    public class PoolManager : MonoBehaviour
     {
         private List<MapPartBase> _mapPartBases;
 
